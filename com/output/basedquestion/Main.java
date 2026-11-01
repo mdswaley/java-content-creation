@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Employee employee = null;
         employee.showDetails();
+//        if we don't make static it will throw NullPointerException
     }
 }
 
