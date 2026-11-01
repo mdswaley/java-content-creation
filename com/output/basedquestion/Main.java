@@ -12,7 +12,7 @@ public class Main {
  * bcz static method is belongs to class not object
  * so even you assign null in object reference
  * compiler convert employee.showDetails(); to Employee.showDetails();
- * at compilation time
+ * at compilation time.
  * */
 
 class Employee{
