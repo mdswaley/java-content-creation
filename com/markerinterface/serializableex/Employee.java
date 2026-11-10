@@ -1,6 +1,8 @@
 package com.markerinterface.serializableex;
 
-class Employee {
+import java.io.Serializable;
+
+class Employee implements Serializable {
     String empId;
     String name;
 
