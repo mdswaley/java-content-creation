@@ -2,15 +2,28 @@ package com.markerinterface.serializableex;
 
 import java.io.Serializable;
 
-class Employee implements Serializable {
+public class Employee implements Serializable {
+
+    // track the modification
+    public static final long serialVersionUID = 2l;
+
     String empId;
     String name;
-    String password;
+    transient String password; // skip while serialization
 
     Employee(String empId, String name, String password){
         this.empId = empId;
         this.name = name;
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "empId='" + empId + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
 

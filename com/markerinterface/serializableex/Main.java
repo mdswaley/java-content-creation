@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos = new FileOutputStream("Emp.ser");
+        FileOutputStream fos = new FileOutputStream("Employee.ser");
 
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
