@@ -5,10 +5,12 @@ import java.io.Serializable;
 class Employee implements Serializable {
     String empId;
     String name;
+    String password;
 
-    Employee(String empId, String name){
+    Employee(String empId, String name, String password){
         this.empId = empId;
         this.name = name;
+        this.password = password;
     }
 }
 
